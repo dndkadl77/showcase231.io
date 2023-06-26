@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="index.css">
+    <title>디지털디자인과 2023년 1학기 과제전</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px 40px 20px 40px;
+    border-bottom: solid 4px #ffa53e;
+}
+
+.menu a,
+.title a,
+.archive a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.menu {
+    width: 200px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    color: #ffa53e;
+    transition: .3s;
+    font-size: 23px;
+}
+
+.title {
+    font-size: 30px;
+    width: auto;
+}
+
+.title a:hover {
+    color: #ffa53e;
+    transition: .3s;
+    font-size: 32px;
+}
+
+.archive {
+    position: relative;
+    right: 0;
+    width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.archive img {
+    width: 40px;
+}
+
+.main {
+    margin: 1% 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 7%;
+    align-items: center;
+
+}
+
+.left-section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10%;
+}
+
+.left-section p {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide-in 1s linear infinite;
+}
+
+.left-section p1 {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+    transform-origin: center;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide-in 1s linear infinite;
+}
+
+.left-section p1:hover {
+    font-size: 52px;
+    color: #ffa53e;
+    background-color: #000;
+    transition: .3s;
+    font-weight: bold;
+}
+
+#highlight-text {
+    color: #000;
+    font-weight: normal;
+    transition: color 0.3s, font-weight 0.3s;
+}
+#highlight-text:hover {
+    color: #ffa53e;
+    font-weight: bold;
+    transition: 0.3s
+}
+
+.right-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.menu-section {
+    width: 100%;
+    padding: 0 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #000;
+}
+
+.menu-items a:hover {
+    color: #ffa53e;
+    transition: .3s;
+}
+
+.menu-item:hover {
+    font-size: 20px;
+    transition: .1s;
+}
+
+.menu-item {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+footer {
+  background-color: #fff;
+  border-top: solid 4px #ffa53e ;
+  color:  #000;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-content img {
+  width: 120px;
+  margin: 5px 0;
+}
+
+/* 반응형 스타일링 */
+@media screen and (max-width: 768px) {
+    .main {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%;
+    }
+
+    .left-section p {
+        font-size: 16px;
+    }
+
+    .menu-section {
+        padding: 0;
+    }
+}
+</style>
+
+<body>
+    <header>
+        <div class="menu">
+            <a href="#">DxDAward</a>
+            <a href="#">Info</a>
+        </div>
+        <div class="title">
+            <a href="index.html">디지털디자인과 2023년 1학기 과제전</a>
+        </div>
+        <div class="archive">
+            <a href="http://dxdesign.kr" target="_blank"><img src="img/dxd_black_24dp.svg" alt=""></a>
+            <a href="https://www.instagram.com/dcudxd/?hl=ko" target="_blank"><img src="img/instagram_black_24dp.svg"
+                    alt=""></a>
+    </header>
+
+
+    <div class="main">
+        <div class="left-section">
+            <p>우리는</p>
+            <p1>"즐거운 DX"</p1>
+            <p>를 추구하는</p>
+            <p><span id="highlight-text">디지털디자인과</span> 입니다.</p>
+        </div>
+        <div class="right-section">
+            <div class="menu-section">
+                <h2 class="menu-title">3학년</h2>
+                <ul class="menu-items">
+                    <a href="3_bran.html">
+                        <li class="menu-item">브랜딩과뉴미디어</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">인포메이션디자인</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">인터랙션디자인</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">엔터테인먼트디자인2</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">모션그래픽</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h2 class="menu-title">2학년</h2>
+                <ul class="menu-items">
+                    <a href="">
+                        <li class="menu-item">인포메이션그래픽스</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">디지털콘텐츠디자인1</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">디지털애니메이션</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">3D컴퓨터그래픽스1</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">웹디자인</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu-section">
+                <h2 class="menu-title">1학년</h2>
+                <ul class="menu-items">
+                    <a href="">
+                        <li class="menu-item">기초디지털표현</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">디지털조형</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">디지털타입페이스</li>
+                    </a>
+                    <a href="">
+                        <li class="menu-item">컴퓨터그래픽스1</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="img/dxd_logo_k.png" alt="">
+            <p>대구가톨릭대학교 디지털디자인과<br>
+			38430 경상북도 경산시 하양읍 하양로 13-13 성카타리나관(D15)<br>
+			053-850-3920</p>
+          </div>
+    </footer>
+
+
+    <script>
+
+// -------------------------------------------------------------------------------------------
+    </script>
+</body>
+
+</html>
